@@ -8,19 +8,17 @@ This project provides the capability of basic embedding API interfaces, carrying
 pip install -r requirements.txt
 ```
 
-or 
-
-```
-pip install fastapi
-pip install "uvicorn[standard]"
-```
-
-# How to use
+# How to Use
 
 ## 1. Start Server
 
 ```
 uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+
+## 2. Using Docker
+
+```
+docker run -p 9998:8080 -d text2vec:latest
 ```
 
 
